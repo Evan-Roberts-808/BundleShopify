@@ -43,15 +43,15 @@ app.get('/', shopify.ensureInstalledOnShop(), (req : any, res : any) => {
 });
 
 // get products will not work need more layers
-app.get('/api/products', shopify.ensureInstalledOnShop(), async (req : any, res : any) => {
-  try {
-    const products = await shopify.product.list();
-    res.json(products);
-  } catch (error) {
-    console.log(error);
-    res.status(500).send('Error fetching products');
-  }
-})
+// app.get('/api/products', shopify.ensureInstalledOnShop(), async (req : any, res : any) => {
+//   try {
+//     const products = await shopify.product.list();
+//     res.json(products);
+//   } catch (error) {
+//     console.log(error);
+//     res.status(500).send('Error fetching products');
+//   }
+// })
 
 // listen
 app.listen(port, () => {
