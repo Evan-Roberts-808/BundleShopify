@@ -1,0 +1,5 @@
+
+
+run `tsc --watch` to automatically compile typescript as its edited to run code run `node dist/index.js` 
+
+need to use prisma to create a small db to use for storing tokens during development process will eventually replace with the Bundle db

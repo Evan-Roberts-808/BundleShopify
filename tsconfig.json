@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es5",           // Specify the target JavaScript version
+      "module": "commonjs",      // Set module system for Node.js
+      "outDir": "./dist",        // Output compiled JavaScript files to a "dist" folder
+      "strict": true,           // Enforce strict type checking
+      "esModuleInterop": true,  // Enable compatibility with CommonJS modules
+      "skipLibCheck": true,      // Skip type checking of declaration files
+      "typeRoots": ["node_modules/@types"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["src/.env"]
+  }
+  
